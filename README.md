@@ -26,7 +26,7 @@ https://download.pytorch.org/models/vgg19-dcbb9e9d.pth
 
 使用vgg19提取内容层特征、风格层特征，然后更新要生成图片的权重（具体看源码吧，很神奇）
 
-选择了vgg19的15层输出特征为内容层，3、8、15、22层特征为风格层         
+选择了vgg19的第15层输出特征为内容层，第3、8、15、22层特征为风格层。         
 ```python
 content_layers = [15]
 style_layers = [3,8,15,22]
